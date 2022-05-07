@@ -1,0 +1,84 @@
+.news-title{
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+    margin:0;
+}
+.new-list a:hover{
+    text-decoration:underline;
+}
+h2{
+    margin: 4rem 0 .5rem;
+}
+ul{
+    list-style: none;
+     padding:0;
+    margin:0;}
+.latest-news{
+    display: flex;
+    max-width: 52rem;
+    width:100%;
+    flex-direction: column;
+}
+.latest-news h2{
+    font:400 1.44rem "Inter UI","Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue";
+    margin-top:1rem;
+}
+.news-item:nth-child(2n+1){
+    border-radius: 0.25rem;
+    background-color: #f9f9fb;
+}
+.news-item{
+    flex-direction: revert;/*等价于inherit*/
+    padding:.7rem;
+    display: flex;
+    justify-content: space-between;
+}
+.news-main{
+    font:500 1.1rem "Inter UI","Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue";
+    color: #1b1b1b;
+}
+.news-tips{
+    font-size:0.694rem;
+    color:#4e4e4e;
+    font-family: "Inter UI","Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue";
+}
+.request-title{
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+    margin:0;
+}
+.recent-contributions{
+    display: flex;
+    max-width: 52rem;
+    width:100%;
+    flex-direction: column;
+    margin-top:25px;
+}
+.recent-contributions h2{
+    font:400 1.44rem "Inter UI","Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue";
+    margin-top:1rem;
+}
+.request-item:nth-child(2n+1){
+    border-radius: 0.25rem;
+    background-color: #f9f9fb;
+}
+.request-item{
+    flex-direction: revert;/*等价于inherit*/
+    padding:0.7rem;
+    display: flex;
+    justify-content: space-between;
+}
+.request-main{
+    font:500 1.1rem "Inter UI","Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue";
+    color: #1b1b1b;
+}
+.request-tips{
+    font-size:0.694rem;
+    color:#4e4e4e;
+    font-family: "Inter UI","Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue";
+}
+.contribution-list a:hover{
+    text-decoration: underline;
+}

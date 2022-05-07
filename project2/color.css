@@ -1,0 +1,49 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+.html{
+    background-color: rgba(237,57,102,0.7);
+    
+}
+.css{
+    background-color:rgba(116,169,246,0.7);
+    color: #fff;
+}
+.javascript{
+  background-color: rgba(224,102,51,0.7);
+  
+}
+.http{
+    background-color:rgba(57,160,56,0.7);
+}
+.web-apis{
+    background-color: rgba(179,102,249,0.7);
+}
+.web-technology{
+    background-color: rgba(251,251,254);
+}
+.page-footer{
+    color:#5b5b66;
+}
+.top-entry{
+    color:#cfcfd8;
+}
+.learn1{
+    background-color:rgba(255,109,145,0.7);
+}
+ .html1{
+    background-color:rgba(255,112,127,0.7)
+}
+ .css1{
+    background-color:rgba(140,180,255,0.7)
+}
+ .javascript1{
+    background-color:rgba(175,161,0,0.7)
+}
+ .accessbility1{
+    background-color: #fff;
+}
+.fqa{
+    background-color:rgba(255,112,127,0.7)
+}

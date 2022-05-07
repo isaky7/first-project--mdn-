@@ -1,0 +1,60 @@
+
+ main{
+     min-height: 80vh;
+ }
+ .homepage{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     width: 100%;
+     position: relative;
+ }
+ .tile-container a:hover{
+    text-decoration: underline;
+}
+.tile-container a{
+    color: #1b1b1b;
+}
+.tile-tag{
+    font-weight: 500;
+    font-family: Inter;
+}
+.featured-articles{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding:0 1rem;
+    
+}
+.featured-articles h2{
+    margin:4rem 0 .5rem;
+    font:400 1.44rem "Inter UI","Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue";
+}
+.tile-container{
+    display: flex;
+    max-width: 52rem;
+    flex-direction: row;
+    padding:0 1rem;
+}
+.article-title{
+    width: 33%;
+    position:relative;
+    border-radius: .5rem;
+    padding:1rem;
+    border:1px solid #cdcdcd;
+    margin: .5rem;
+}
+.article-title:hover{
+    box-shadow: 0px 1px 6px rgba(43,42,51,0.1);
+}
+.tile-title{
+    font:400 1.2rem/1.5rem "Inter UI","Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue";
+    font-weight:510;
+    line-height: 1.5;
+    margin:0 0 1rem;
+}
+.article-title p{
+    line-height: 1.2;
+    margin:0;
+}
+

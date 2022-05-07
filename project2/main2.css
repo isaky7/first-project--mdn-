@@ -1,0 +1,276 @@
+*{
+    padding:0%;
+    margin:0%;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    color:#15141a;
+    font-family:"Inter UI";
+    text-rendering: optimizeSpeed;
+    scrollbar-color: rgba(0,0,0,0.25),transparent;/*自定义滚动条颜色*/
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+button{
+cursor: pointer;
+}
+.top{
+ position:sticky;
+ top:0;
+ width: 100%;
+ background-color: #15141a;
+ z-index: 100;
+ border-bottom:1px solid #52525e;
+}
+
+.top .container{
+    align-items: center;
+    display: flex;
+    grid-gap: 1rem;
+    gap:1rem;
+}
+.top-container button{
+    display:none;
+}
+.top-entry{
+    line-height: 19.2px;
+    padding: 8px;
+    font-size: 19.2px;
+    display: inline-flex;
+    border-radius: .25rem;
+    border-top: none;
+}
+.level-entry{
+    display: none;
+background: none;
+text-align: left;
+width: 100%;
+border-radius: .25rem;
+cursor: pointer;
+color: #fbfbfe;
+border-top: none;
+padding: .5rem;
+min-height: 53px;
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 1440px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.top-container{
+    position: relative;
+}
+.wrap-loge{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height:4rem;
+    flex:0 1;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo svg{
+    margin-top: .3rem;
+    height: 1.5rem;
+}
+.main-menu{
+    margin-right: auto;
+    order: 0;
+}
+.top-wrapper{
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+    flex: 1 1;
+    text-align: center;
+    flex-direction: row;
+    align-items:center;
+}
+.menu-box{
+    box-sizing: border-box;
+    grid-gap:1rem ;
+    display: flex;
+    list-style: none;
+    padding:0;
+    width: 100%;
+    margin: 0 auto 0 0;
+    justify-content: space-around;
+    text-align: center;
+}
+.menu-box .a{
+    display: inline-flex;
+}
+.hidden{
+    display: none;
+    position: absolute;
+    max-width:25rem ;
+    z-index: 200;
+    top:calc(100% + 4px);
+    background-color: #15141a;
+    padding: .5rem;
+    border:1px solid #52525e;
+    border-radius: .25rem;
+    width: max-content;
+    z-index: 200;
+    margin: 0;
+}
+.page-style{
+    border-bottom: 0;
+    margin-bottom: 0;
+}
+.small{
+    height:1.75rem;
+    padding:.25rem;
+    background-color:transparent;
+   position: relative;
+
+}
+.theme-menu{
+    border-bottom: 0;
+    margin-bottom: 0;
+}
+.hidden .li{
+    width: 100%;
+}
+.submenu::before{
+    content: '';
+    display: block;
+    height: 8px;
+    left: 0;
+    position: absolute;
+    top: -8px;
+    width: 100%;
+}
+.top-entry-heading{
+    display: flex;
+}
+
+.submenu-item-heading{
+    font: 400 1rem Menlo;
+    text-align: left;
+}
+.submenu-item-discription{
+    display: block;
+    margin: .25rem 0 0;
+    font: 500 0.85rem Menlo;
+
+}
+.submenu a{
+    color: #fbfbfe;
+}
+.submenu-item{
+    display: flex;
+    padding: .75rem;
+    border-radius: .25rem;
+    align-items: center;
+    border: 1px solid transparent;
+    height: 100%;
+    width: 100%;
+    font:600 1rem Menlo;
+}
+
+
+.top-container:hover ul{
+   display: block;
+}
+.top-container:hover .top-entry{
+    color:#74a9f6;
+    background-color: rgba(116,169,246,0.4392156862745098);
+    border-radius: 2px;
+}
+.menu-icon,.faq,.submenu-icon{
+    background-color: #fbfbfe;
+    height: 2rem;
+    position: relative;
+    display:block;
+    width: .2rem;
+    margin-right: .75rem;
+}
+.action:hover{background-color: #696969;}
+.button .action{
+    border-color: transparent;
+}
+.header-search .has-icon{right:0.5rem;
+}
+.header-search input{width: 1rem;
+  }
+
+.header-search input:focus{width: inherit;}
+.clear-search-button{
+    background-color: transparent;
+    display: none;
+  right:1.2rem;
+  width: 1.5rem;
+}
+button{
+    border-radius: 0.25rem;
+    cursor: pointer;
+    padding: 0;
+    text-decoration: none;
+    appearance: none;
+    border: none;
+    font:inherit;
+}
+.header-search .button{
+    background-color:transparent;
+    height:1.5rem;
+    position: absolute;
+    padding: 0;
+    top:.25rem;
+}
+.header-search .serach-input-field:focus .button .clear-search-button{
+    display: block;
+    right:2.8rem;
+}
+.action .has-icon{font:600 1.68px "Inte UI";
+text-transform: none;}
+.header-search{order:1;
+max-width: 100%;}
+.search-form{
+    display: flex;
+    gap:.5rem;
+    position: relative;
+    width: 100%;
+    margin:0 auto;
+    max-width: 20rem;
+    align-items: center;
+}
+.header-search .search-input-field{
+    appearance: none;
+    background-color: transparent;
+    border: 1px solid #858585;
+    border-radius: 100px;
+    padding-right: 2rem;
+    padding-left: 1rem;
+    caret-color: #8cb4ff;
+    min-width: 5rem;
+    height:2rem;
+    color:#fff;
+}
+.header-search .search-input-field:focus{
+    outline:0 none;
+    box-shadow: 0 0 0 3px #000800,0 0 0 3px #8cb4ff;
+    border-color:#8cb4ff;
+    width: inherit;
+}
+.header-search .search-input-field:invalid,
+.header-search .search-input-field:invalid::placeholder{
+ opacity: 1;
+ text-decoration-color:#8cb4ff ;
+ text-underline-offset: .1rem;
+ text-decoration-thickness: .15rem;/*装饰线厚度*/
+}
+ 
+
+

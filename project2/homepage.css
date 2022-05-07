@@ -1,0 +1,195 @@
+h1{
+    word-break: break-word;
+}
+p{
+    margin:1rem 0 2rem;
+}
+u{
+    text-decoration-thickness: .15rem;
+    text-underline-offset: .1rem;
+    text-decoration-color:#8cb4ff;
+}
+.iconfont{
+    display: inline-block;
+    height: 1rem;
+    width:1rem;
+    mask-position: center;
+    mask-repeat: no-repeat;
+    flex-shrink: 0;
+}
+input,button,select,textarea{font: inherit;}
+*,::after,::before{
+    box-sizing: border-box;
+}
+.homepage{
+    display:flex;
+    gap:2rem;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    overflow-x: clip;
+    overflow-y: visible;
+    position: relative;
+}
+.homepage-hero{
+    color:#fff;
+    width: 100%;
+    display: grid;
+    grid-template-rows: fit-content(24rem);
+}
+.homepage-hero section{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 52rem;
+    width: 100%;
+    margin: 0 auto;
+    gap:2rem;
+    padding:0 1rem;
+    grid-column: 1;
+    grid-row: 1;
+}
+.homepage-hero section h1{
+    font-size:3rem;
+    line-height:120%;
+    margin: 0;
+    font-weight: 200;
+    letter-spacing:-.5px;
+}
+.homepage-hero section h1::after{
+    content: "n";
+    color:transparent;
+    text-decoration: underline;
+    text-decoration-thickness: .15rem;
+    text-underline-offset: .1rem;
+    text-decoration-color:#8cb4ff;
+}
+.homepage-hero section p{
+    font-weight: 300;
+}
+.madala-container{
+    width: 100%;
+    z-index: -1;
+    overflow: hidden;
+    background-color: rgba(1,1,1,.9);
+    grid-column: 1;
+    grid-row:1;
+    top:0;
+    display:flex;
+    justify-content: center;
+}
+.homepage-hero-search{
+    width: 100%;
+    max-height: 4rem;
+    display: flex;
+    margin-bottom: 1rem;
+    max-width:40rem;
+    align-self: center;
+}
+.homepage-hero-search form{
+    gap:0;
+    display: flex;
+    align-items: center;
+    margin: 0;
+   position: relative;
+   width: 100%;
+}
+.visually-hidden{
+    border: 0!important;
+    clip-path:inset(50%) !important;
+    clip:rect(1px,1px,1px,1px)!important;
+    height: 1px!important;
+    margin: -1px!important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    white-space: nowrap !important;
+    width: 1px !important;
+}
+.homepage-hero-search .search-input-field{
+    border-radius: 10rem;
+    background-color: rgba(1,1,1,.5);
+    padding: 2rem;
+    border: 1px solid #858585;
+    color: #fff;
+    height:2rem;
+    width: 100%;
+    min-width:60px;
+}
+.has-icon{
+    transform: none;
+    position:absolute;
+    right: 1.5rem;
+    left: auto;
+    top: 0;
+    height:100%;
+}
+.search-button{
+    width: 1.5rem;
+    padding: 0;
+    color:#b3b3b3;
+    background-color: transparent;
+    border-color: transparent;
+    border-radius: 0.25rem;
+    display: inline-block;
+    text-decoration: none;
+    font:600 0.678rem "Inter UI";
+}
+.button-wrap{
+    background-color: none;
+    align-items: center;
+    border-radius:0.25rem ;
+    border: 1px solid transparent;
+    color:#b3b3b3;
+    display: flex;
+    gap:.25rem;
+    height: 1.5rem;
+    justify-content: center;
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+}
+button .iconfont{
+    margin: 0 -1px;
+    color:#fff;
+}
+.homepage-hero .button-wrap .iconfont{
+  border:none;
+}
+.mandala-container{
+    width: 100%;
+    top:0;
+    overflow: hidden;
+    z-index: -1;
+    background-color: rgba(1,1,1,.9);
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+    justify-content: center;
+}
+.homepage-hero .mandala-translate{
+    transform: translate(12rem,-8rem);
+}
+.mandala{
+    animation: xs 500s linear infinite;
+}
+@keyframes xs{       
+		 
+    0%{-webkit-transform:rotate(0deg);}
+
+    50%{-webkit-transform:rotate(180deg);}
+
+    100%{-webkit-transform:rotate(360deg);}
+}
+.mandala-container svg{
+    font-size:1.5rem;
+    font-weight: 300;
+    user-select: none;
+}
+.mandala-accent-1{font-size:1.5rem;}
+.mandala-accent-2{font-size:1.3rem;}
+.mandala-accent-3{font-size:1.2rem;}
+.mandala-accent-4{font-size:1.1rem;}
+.mandala-accent-5{font-size:1rem;}
+.mandala-container svg>text{fill:#858585;}
